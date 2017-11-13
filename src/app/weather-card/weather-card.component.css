@@ -1,0 +1,117 @@
+.weather-card {
+  height: 16.66%;
+  overflow: hidden;
+  -webkit-transition: height 1s;
+  transition: height 1s;
+}
+
+.weather-info {
+  display: inline-block;
+  width: 47%;
+  height: 91%;
+  vertical-align: top;
+  padding-top: 1em;
+  padding-left: 0.5em;
+}
+
+.weather-icon {
+  display: inline-block;
+  height: 100%;
+  -webkit-transition: visibility 0.5s;
+  transition: visibility 0.5s;
+  visibility: hidden;
+  width: 50%;
+}
+
+.weather-card.active > .weather-icon {
+  transition: visibility 1s;
+  visibility: visible;
+}
+
+.weather-card.active h2.desc {
+  padding-top: 2em;
+  -webkit-transition: padding-top 2s;
+  transition: padding-top 2s;
+}
+
+h2.upper {
+  text-transform: uppercase;
+}
+
+h2.desc {
+  font-family: "Nexa_Free_Light";
+  font-size: 1.3em;
+  padding-top: 6em;
+  padding-bottom: 0.2em;
+  text-transform: capitalize;
+  -webkit-transition: padding-top 1s;
+  transition: padding-top 1s;
+}
+
+h2.temp {
+  font-size: 2em;
+  font-family: "Nexa_Free_Light";
+  padding-top: 0.2em;
+}
+
+p.more-info {
+  font-family: "Nexa_Free_Light";
+  padding-top: 0.2em;
+}
+
+.morning {
+  background-color: #dfb27d;
+}
+
+.day {
+  background-color: #d68d59;
+}
+
+.evening {
+  background-color: #a85e50;
+}
+
+.night {
+  background-color: #593e40;
+}
+
+.active {
+  height: 50%;
+  -webkit-transition: height 0.7s;
+  transition: height 1s;
+}
+
+.clear-day {
+  background: url(/assets/weather-icons/day.svg) no-repeat;
+  background-size: contain;
+}
+
+.clear-night {
+  background: url(/assets/weather-icons/night.svg) no-repeat;
+  background-size: contain;
+}
+
+.clouds-day {
+  background: url(/assets/weather-icons/cloudy-day.svg) no-repeat;
+  background-size: contain;
+}
+
+.clouds-night {
+  background: url(/assets/weather-icons/cloudy-night.svg) no-repeat;
+  background-size: contain;
+}
+
+.rain {
+  background: url(/assets/weather-icons/rain.svg) no-repeat;
+  background-size: contain;
+}
+
+.extreme {
+  background: url(/assets/weather-icons/thunder.svg) no-repeat;
+  background-size: contain;
+}
+
+.snow {
+  background: url(/assets/weather-icons/snow.svg) no-repeat;
+  background-size: contain;
+}

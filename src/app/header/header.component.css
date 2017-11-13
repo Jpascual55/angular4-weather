@@ -1,0 +1,20 @@
+header {
+  background-color: #7f9c87;
+  height: 6%;
+  padding: 3% 3% 0 3%;
+}
+
+h1 {
+  display: inline-block;
+  padding-left: 2%;
+  width: 58%;
+}
+
+.buttons {
+  display: inline-block;
+  margin-left: 2em;
+}
+
+.buttons i {
+  padding: 0 0 0 0.3em;
+}

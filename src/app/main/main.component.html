@@ -1,0 +1,4 @@
+<div class="section-main">
+  <app-weather-list *ngIf="weatherData" [weatherData]="weatherData"></app-weather-list>
+  <i *ngIf="!weatherData" class="fa fa-spinner fa-spin fa-5x fa-fw"></i>
+</div>

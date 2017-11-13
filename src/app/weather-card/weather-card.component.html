@@ -1,0 +1,22 @@
+<div class="weather-card" [ngClass]="{'morning': weather.moment === 'Morning',
+'day': weather.moment === 'Day',
+'evening': weather.moment === 'Evening',
+'night': weather.moment === 'Night',
+'active': weather.active}">
+  <div class="weather-icon" [ngClass]="{'clear-day': weather.main === 'Clear',
+    'clear-night': weather.main === 'Clear' && weather.moment === 'Night',
+    'clouds-day': weather.main === 'Clouds',
+    'clouds-night': weather.main === 'Clouds' && weather.moment === 'Night',
+    'rain': weather.main === 'Rain',
+    'extreme': weather.main === 'Extreme',
+    'snow': weather.main === 'Snow'}">
+  </div>
+  <div class="weather-info">
+    <h2 class="upper">{{weather.moment}}</h2>
+    <h2 class="temp">{{weather.temp}} ºC</h2>
+    <h2 class="desc">{{weather.desc}}</h2>
+    <p class="more-info">Wind: {{weather.wind}} mph</p>
+    <p class="more-info">Humidity: {{weather.humidity}} %</p>
+  </div>
+
+</div>
